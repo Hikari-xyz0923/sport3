@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: sports-buddy-haidian
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: SPORT_BUDDY_DATA_DIR
+        value: /data
+      - key: COOKIE_SECURE
+        value: "true"

@@ -1,0 +1,9 @@
+node_modules
+dist
+.git
+data.json
+*.log
+electron-main.js
+start.bat
+start-server.bat
+open-website.bat
