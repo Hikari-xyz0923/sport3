@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f766e" />
+  <title>知动乎 · 海淀区运动伙伴匹配</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="leaflet.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <!-- 先按顺序加载 Leaflet，再加载应用代码，避免地图初始化时 L 尚未就绪。 -->
+  <script defer src="leaflet.js"></script>
+  <script defer src="app.js"></script>
+</body>
+</html>
